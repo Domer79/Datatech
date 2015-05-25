@@ -10,7 +10,7 @@ namespace Test.Wpf
 {
     class Program
     {
-        public static IStateMachine StateMachine = new StateMachine();
+        public static IStateMachine StateMachine = new StateMachine(new StateMachineActionDispatcher());
 
         [STAThread]
         public static void Main()

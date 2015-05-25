@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="119e4164-c5e0-43fe-adbe-7e45d80bd2a3"
+  name="StateMachineModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="504c37dc-3455-4752-818f-06239f470fa5">
+      <body>Нажатия кнопки №1</body>
+      <annotatedElements>
+        <sendSignalActionMoniker
+          Id="8cba0bd0-b9bd-4040-9d0e-4bbb833806e7"
+          LastKnownName="Нажатие на кнопку №1"
+          LastKnownLocation="StateMachineModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="29580348-7003-4c47-ae37-27d8e6ff3639"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="7361145e-b705-41e6-aea9-fae6983b8940"
+            name="Экран 1"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="696348af-f028-4ddd-9958-ebda85423db7"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="8cba0bd0-b9bd-4040-9d0e-4bbb833806e7"
+                  LastKnownName="Нажатие на кнопку №1"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="d6a9be07-d51d-40c7-9c0a-cd8a06e2ac43"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="70feddca-26a5-4e2d-b6a0-e0c5c4c958db"
+            name="Экран 1. Активирована кнопка №2"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f1aa52f6-058a-4f87-9697-6ce74ea614a8"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="8dc67c23-7410-4b30-a925-db6263ce3fed"
+                  LastKnownName="Нажаьте на кнопку №2"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="40a5e825-2a0e-4e18-9ad0-ec7c083e5194"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="41b33ecb-4a17-4aaa-be12-8a207bb4a416"
+            name="Экран №2"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="e981a912-d25f-4019-b586-ae5bb1efa792"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="520d841f-1f71-4e60-a2ea-abba840f5ad2"
+                  LastKnownName="Ввод текста в поле №1"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="ae330f00-5ce2-42d1-a2db-9f2cf4594e2f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="1d29678e-e646-431d-89e4-3ef3bcf930b7"
+                  LastKnownName="Ввод в поле текста &quot;hello&quot;"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="0c0a2109-7bf0-45e5-9cba-8c41e3ae4b81"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="92d201eb-3e15-4eea-888a-6dc046b096cf"
+            name="Экран №2. Кнопка №3 неактивна"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="114251b7-5175-41be-b9cc-bed715b4dcf6"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="e96b1516-950d-4770-bc84-afb8193e80ab"
+            name="Экран №2. Текст №1 = &quot;thank you&quot;, кнопка №3 активна"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="d961c355-8ea5-41b1-a240-90fdd95b75f4"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="8880748e-b1ed-4258-9370-d4f1795d9142"
+                  LastKnownName="Signal3"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="ed78bc83-6a3a-4ab2-a3b1-39bc89e1de0c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <sendSignalAction
+            Id="8cba0bd0-b9bd-4040-9d0e-4bbb833806e7"
+            name="Нажатие на кнопку №1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f990c59f-5d70-4238-af8d-e90a025b6578"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="70feddca-26a5-4e2d-b6a0-e0c5c4c958db"
+                  LastKnownName="Экран 1. Активирована кнопка №2"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="8dc67c23-7410-4b30-a925-db6263ce3fed"
+            name="Нажаьте на кнопку №2"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f590683c-2550-417b-8232-62f8b70df35f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="41b33ecb-4a17-4aaa-be12-8a207bb4a416"
+                  LastKnownName="Экран №2"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="8880748e-b1ed-4258-9370-d4f1795d9142"
+            name="Signal3"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="4b7c6472-9cff-4c5c-8fc5-b70d77d45e36"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="70feddca-26a5-4e2d-b6a0-e0c5c4c958db"
+                  LastKnownName="Экран 1. Активирована кнопка №2"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="520d841f-1f71-4e60-a2ea-abba840f5ad2"
+            name="Ввод текста в поле №1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="854ac261-6629-4ca2-be35-53a4097f752b"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="92d201eb-3e15-4eea-888a-6dc046b096cf"
+                  LastKnownName="Экран №2. Кнопка №3 неактивна"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="1d29678e-e646-431d-89e4-3ef3bcf930b7"
+            name="Ввод в поле текста &quot;hello&quot;"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="7575958d-a5eb-4671-9030-ceb56a19023a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="e96b1516-950d-4770-bc84-afb8193e80ab"
+                  LastKnownName="Экран №2. Текст №1 = &quot;thank you&quot;, кнопка №3 активна"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="336d7f9c-5ddb-4cc9-9a95-f3f147b387fc"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f57dd4a4-44af-4d13-b7a4-87417212516f">
+            <componentMoniker
+              Id="ade8ca77-c9df-44ec-aeb5-cc3dbee5f727"
+              LastKnownName="Component2"
+              LastKnownLocation="StateMachineModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ade8ca77-c9df-44ec-aeb5-cc3dbee5f727"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

@@ -12,16 +12,19 @@ namespace Test.Wpf
     {
         private string _currentState;
         private readonly IStateCollection _section;
-        private readonly StateMachineActionDispatcher _actionDispatcher;
+        private readonly object _actionDispatcher;
         private readonly Dictionary<IState, MethodInfo> _stateActions;
 
         /// <summary>
         /// Инициализирует новый экземпляр класса <see cref="T:System.Object"/>.
         /// </summary>
-        public StateMachine()
+        public StateMachine(object actionDispatcher)
         {
+            if (actionDispatcher == null) 
+                throw new ArgumentNullException("actionDispatcher");
+
             _section = (StateMachineSection)ConfigurationManager.GetSection("stateMachine");
-            _actionDispatcher = new StateMachineActionDispatcher();
+            _actionDispatcher = actionDispatcher;
             _stateActions = new Dictionary<IState, MethodInfo>();
             StateActionsInit();
         }
@@ -34,6 +37,8 @@ namespace Test.Wpf
                 _stateActions.Add(stateElement, methodInfos.First(mi => mi.Name == stateElement.NextState));
             }
         }
+
+        #region IStateMachine members
 
         public string CurrentState
         {
@@ -59,6 +64,8 @@ namespace Test.Wpf
 
             _stateActions[stateElement].Invoke(_actionDispatcher, args ?? new object[] { });
         }
+
+        #endregion
 
         class StateMachineElement : IState
         {

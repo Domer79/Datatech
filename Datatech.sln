@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Wpf", "Test.Wpf\Test.Wpf.csproj", "{67C27343-0196-43EF-A774-C36A67B39D8D}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StateMachineModelingProject", "StateMachineModelingProject\StateMachineModelingProject.modelproj", "{0294AC13-446A-4048-ADF0-C3E7EDE23180}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{67C27343-0196-43EF-A774-C36A67B39D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67C27343-0196-43EF-A774-C36A67B39D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67C27343-0196-43EF-A774-C36A67B39D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0294AC13-446A-4048-ADF0-C3E7EDE23180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0294AC13-446A-4048-ADF0-C3E7EDE23180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0294AC13-446A-4048-ADF0-C3E7EDE23180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0294AC13-446A-4048-ADF0-C3E7EDE23180}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

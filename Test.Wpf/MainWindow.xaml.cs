@@ -35,7 +35,12 @@ namespace Test.Wpf
 
         private void Btn1_Click(object sender, RoutedEventArgs e)
         {
-            Program.StateMachine.ChangeState("Start", "Btn1Click", this);
+            Program.StateMachine.ChangeState("Start", "Form1Btn1Click", this);
+        }
+
+        private void Btn2_Click(object sender, RoutedEventArgs e)
+        {
+            Program.StateMachine.ChangeState("Form1Btn1Click", "Form1Btn2Click");
         }
     }
 }
