@@ -1,19 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Test.Wpf.ConfigurationSections;
+﻿using System.Windows;
+using Test.Wpf.Infrastructure.StateMachine;
+using Test.Wpf.Infrastructure.StateMachine.Events;
 
 namespace Test.Wpf
 {
@@ -25,22 +12,22 @@ namespace Test.Wpf
         public MainWindow()
         {
             InitializeComponent();
-            Closing += MainWindow_Closing;
+            Loaded += MainWindow_Loaded;
         }
 
-        void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            Program.StateMachine.ChangeState("Start", "Exit", e);
+            Tools.StateMachine = new StateMachine(new StartupEvent());
         }
 
         private void Btn1_Click(object sender, RoutedEventArgs e)
         {
-            Program.StateMachine.ChangeState("Start", "Form1Btn1Click", this);
+            Tools.StateMachine.ChangeState<MainWindowButton1ClickEvent>(this);
         }
 
         private void Btn2_Click(object sender, RoutedEventArgs e)
         {
-            Program.StateMachine.ChangeState("Form1Btn1Click", "Form1Btn2Click");
+            Tools.StateMachine.ChangeState<MainWindowButton2ClickEvent>(this);
         }
     }
 }

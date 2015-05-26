@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ac8ad2f3-ae74-4d61-b6ad-0ed0c626084a" name="Activity1" linkedPackageId="3aa01fe5-9b99-4e4b-a311-64aaf6d33127" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
-    <comment Id="9f1eda5b-1e68-48d1-87af-c020171afc14">
-      <elementDefinition Id="504c37dc-3455-4752-818f-06239f470fa5" />
-      <body>События</body>
+    <comment Id="c2b8e265-be3b-46f8-8d34-c9483276a72e">
+      <elementDefinition Id="3a9f7c3b-7f91-4599-9857-dfe369b8f686" />
+      <body>Подсказка</body>
       <annotatedElements>
-        <sendSignalActionMoniker Id="4d57bd57-28e0-47ca-85b9-6b669a76e609" LastKnownName="Нажатие на кнопку №1" />
-        <sendSignalActionMoniker Id="c105060c-90f2-4dff-a163-f413bcf88ee4" LastKnownName="Нажатие на кнопку №3" />
-        <sendSignalActionMoniker Id="c9b0123d-ad4c-4a37-ba5b-df7eba9c45f6" LastKnownName="Ввод текста в поле №1" />
-        <sendSignalActionMoniker Id="a0e1d277-8d8f-47ba-8c67-7988f003ccad" LastKnownName="Нажатие на кнопку №2" />
-        <sendSignalActionMoniker Id="a13f510b-77e8-4841-981a-6ab8b56f4595" LastKnownName="Ввод в поле текста &quot;hello&quot;" />
+        <sendSignalActionMoniker Id="437cee1a-5fcd-497e-a0a1-7ccedee22309" LastKnownName="Событие" />
+        <objectNodeMoniker Id="ac5c3d29-1502-4332-8087-e255b0ac4e85" LastKnownName="Состояние" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
@@ -53,10 +50,6 @@
                 <sendSignalActionMoniker Id="c9b0123d-ad4c-4a37-ba5b-df7eba9c45f6" LastKnownName="Ввод текста в поле №1" />
                 <elementDefinition Id="e981a912-d25f-4019-b586-ae5bb1efa792" />
               </objectFlow>
-              <objectFlow Id="413406f9-0813-458a-8ae7-8ad967444eac" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <sendSignalActionMoniker Id="a13f510b-77e8-4841-981a-6ab8b56f4595" LastKnownName="Ввод в поле текста &quot;hello&quot;" />
-                <elementDefinition Id="ae330f00-5ce2-42d1-a2db-9f2cf4594e2f" />
-              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger Id="5cb967fc-b662-489d-826c-d0109c530802" name="2147483647" value="2147483647">
@@ -66,6 +59,12 @@
           </objectNode>
           <objectNode Id="0a49b65d-5601-41a8-8c37-409a0f189a20" name="Экран №2. Кнопка №3 неактивна" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="92d201eb-3e15-4eea-888a-6dc046b096cf" />
+            <objectFlowTargets>
+              <objectFlow Id="9119b511-6a84-4c88-a266-29ab416c5993" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <sendSignalActionMoniker Id="a13f510b-77e8-4841-981a-6ab8b56f4595" LastKnownName="Ввод в поле текста &quot;hello&quot;" />
+                <elementDefinition Id="bb0020c2-761a-49cb-b221-c7b6b4d88444" />
+              </objectFlow>
+            </objectFlowTargets>
             <upperBound>
               <literalInteger Id="9fe763e8-2dfe-4d54-8e2c-a1d3abc49dff" name="2147483647" value="2147483647">
                 <elementDefinition Id="114251b7-5175-41be-b9cc-bed715b4dcf6" />
@@ -139,6 +138,17 @@
                 <elementDefinition Id="161f2d93-d497-4657-b283-aa7eae511539" />
               </objectFlow>
             </objectFlowTargets>
+          </sendSignalAction>
+          <objectNode Id="ac5c3d29-1502-4332-8087-e255b0ac4e85" name="Состояние" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="bc391b0d-bf28-432a-8ca6-eefa17a77856" />
+            <upperBound>
+              <literalInteger Id="4f61e19a-fe2d-4900-a1b7-e33dfafaecb0" name="2147483647" value="2147483647">
+                <elementDefinition Id="e47be7f0-b374-4136-9d07-6600d9963b47" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <sendSignalAction Id="437cee1a-5fcd-497e-a0a1-7ccedee22309" name="Событие" isLeaf="false">
+            <elementDefinition Id="d36c2457-8c91-4928-8848-0f927decc298" />
           </sendSignalAction>
         </nodes>
       </activity>

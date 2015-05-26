@@ -1,9 +1,16 @@
-﻿namespace Test.Wpf.Interfaces
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test.Wpf.Interfaces
 {
-    internal interface IStateMachine
+    public interface IStateMachine
     {
-        string CurrentState { get; }
-        void ChangeState(string next, params object[] args);
-        void ChangeState(string current, string next, params object[] args);
+        IState CurrentState { get; }
+        void ChangeState(string eventName, params object[] args);
+        void ChangeState<TEvent>(params object[] args) where TEvent: class, IEvent;
+//        void ChangeState(string current, string next, params object[] args);
     }
 }

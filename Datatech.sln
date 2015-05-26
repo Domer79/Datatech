@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Wpf", "Test.Wpf\Test.W
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StateMachineModelingProject", "StateMachineModelingProject\StateMachineModelingProject.modelproj", "{0294AC13-446A-4048-ADF0-C3E7EDE23180}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Web", "Test.Web\Test.Web.csproj", "{A1103638-97D5-43F2-B2C0-4F3FE1089F8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0294AC13-446A-4048-ADF0-C3E7EDE23180}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0294AC13-446A-4048-ADF0-C3E7EDE23180}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0294AC13-446A-4048-ADF0-C3E7EDE23180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1103638-97D5-43F2-B2C0-4F3FE1089F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1103638-97D5-43F2-B2C0-4F3FE1089F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1103638-97D5-43F2-B2C0-4F3FE1089F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1103638-97D5-43F2-B2C0-4F3FE1089F8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

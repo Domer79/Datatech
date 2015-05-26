@@ -54,10 +54,23 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Infrastructure\StateMachine\Events\Window2Button3ClickEvent.cs" />
+    <Compile Include="Interfaces\IEvent.cs" />
     <Compile Include="Interfaces\IState.cs" />
-    <Compile Include="Interfaces\IStateCollection.cs" />
     <Compile Include="Interfaces\IStateMachine.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="StateMachine.cs" />
+    <Compile Include="Infrastructure\StateMachine\Events\MainWindowButton1ClickEvent.cs" />
+    <Compile Include="Infrastructure\StateMachine\Events\MainWindowButton2ClickEvent.cs" />
+    <Compile Include="Infrastructure\StateMachine\Events\StartupEvent.cs" />
+    <Compile Include="Infrastructure\StateMachine\Events\Window2TextBox1EnterTextEvent.cs" />
+    <Compile Include="Infrastructure\StateMachine\Events\Window2TextBox2EnterHelloEvent.cs" />
+    <Compile Include="Infrastructure\StateMachine\StateMachine.cs" />
+    <Compile Include="Infrastructure\StateMachine\States\Screen1EnableButton2State.cs" />
+    <Compile Include="Infrastructure\StateMachine\States\Screen1State.cs" />
+    <Compile Include="Infrastructure\StateMachine\States\Screen2Button3NotEnabledState.cs" />
+    <Compile Include="Infrastructure\StateMachine\States\Screen2State.cs" />
+    <Compile Include="Infrastructure\StateMachine\States\Screen2TextThankYouButton3EnabledState.cs" />
     <Compile Include="Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
     </Compile>
@@ -97,7 +110,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="StateMachine.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

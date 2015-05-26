@@ -5,28 +5,16 @@
   name="StateMachineModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <ownedCommentsInternal>
     <comment
-      Id="504c37dc-3455-4752-818f-06239f470fa5">
-      <body>События</body>
+      Id="3a9f7c3b-7f91-4599-9857-dfe369b8f686">
+      <body>Подсказка</body>
       <annotatedElements>
         <sendSignalActionMoniker
-          Id="8cba0bd0-b9bd-4040-9d0e-4bbb833806e7"
-          LastKnownName="Нажатие на кнопку №1"
+          Id="d36c2457-8c91-4928-8848-0f927decc298"
+          LastKnownName="Событие"
           LastKnownLocation="StateMachineModelingProject.uml" />
-        <sendSignalActionMoniker
-          Id="8880748e-b1ed-4258-9370-d4f1795d9142"
-          LastKnownName="Нажатие на кнопку №3"
-          LastKnownLocation="StateMachineModelingProject.uml" />
-        <sendSignalActionMoniker
-          Id="520d841f-1f71-4e60-a2ea-abba840f5ad2"
-          LastKnownName="Ввод текста в поле №1"
-          LastKnownLocation="StateMachineModelingProject.uml" />
-        <sendSignalActionMoniker
-          Id="8dc67c23-7410-4b30-a925-db6263ce3fed"
-          LastKnownName="Нажатие на кнопку №2"
-          LastKnownLocation="StateMachineModelingProject.uml" />
-        <sendSignalActionMoniker
-          Id="1d29678e-e646-431d-89e4-3ef3bcf930b7"
-          LastKnownName="Ввод в поле текста &quot;hello&quot;"
+        <objectNodeMoniker
+          Id="bc391b0d-bf28-432a-8ca6-eefa17a77856"
+          LastKnownName="Состояние"
           LastKnownLocation="StateMachineModelingProject.uml" />
       </annotatedElements>
     </comment>
@@ -124,16 +112,6 @@
                   LastKnownName="Ввод текста в поле №1"
                   LastKnownLocation="StateMachineModelingProject.uml" />
               </objectFlow>
-              <objectFlow
-                Id="ae330f00-5ce2-42d1-a2db-9f2cf4594e2f"
-                isLeaf="false"
-                isMulticast="false"
-                isMultireceive="false">
-                <sendSignalActionMoniker
-                  Id="1d29678e-e646-431d-89e4-3ef3bcf930b7"
-                  LastKnownName="Ввод в поле текста &quot;hello&quot;"
-                  LastKnownLocation="StateMachineModelingProject.uml" />
-              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger
@@ -148,6 +126,18 @@
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="bb0020c2-761a-49cb-b221-c7b6b4d88444"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="1d29678e-e646-431d-89e4-3ef3bcf930b7"
+                  LastKnownName="Ввод в поле текста &quot;hello&quot;"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
             <upperBound>
               <literalInteger
                 Id="114251b7-5175-41be-b9cc-bed715b4dcf6"
@@ -282,6 +272,23 @@
               </objectFlow>
             </objectFlowTargets>
           </sendSignalAction>
+          <objectNode
+            Id="bc391b0d-bf28-432a-8ca6-eefa17a77856"
+            name="Состояние"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="e47be7f0-b374-4136-9d07-6600d9963b47"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <sendSignalAction
+            Id="d36c2457-8c91-4928-8848-0f927decc298"
+            name="Событие"
+            isLeaf="false" />
         </nodes>
       </activity>
     </packageHasNamedElement>

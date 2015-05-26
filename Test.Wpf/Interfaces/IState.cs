@@ -1,13 +1,12 @@
 using System;
+using System.Threading;
 
 namespace Test.Wpf.Interfaces
 {
     public interface IState
     {
-        string CurrentState { get; set; }
-        Action 
-        string NextState { get; set; }
-        int GetHashCode();
-        bool Equals(object compareTo);
+        string Name { get; set; }
+
+        IEvent[] Events { get; }
     }
 }
