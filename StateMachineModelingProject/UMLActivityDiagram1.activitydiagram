@@ -131,6 +131,15 @@
               </objectFlow>
             </objectFlowTargets>
           </sendSignalAction>
+          <sendSignalAction Id="85464267-69f4-42cf-b49e-85fe5801bb97" name="Загрузка программы" isLeaf="false">
+            <elementDefinition Id="47ad943e-54e6-423d-8894-39ac67395af7" />
+            <objectFlowTargets>
+              <objectFlow Id="f9a405a8-6b38-486a-9bea-b42ee8bf01e9" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="96c16ae2-6a1d-4b9f-b424-0b7837024374" LastKnownName="Экран 1" />
+                <elementDefinition Id="161f2d93-d497-4657-b283-aa7eae511539" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

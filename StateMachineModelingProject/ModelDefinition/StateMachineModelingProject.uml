@@ -265,6 +265,23 @@
               </objectFlow>
             </objectFlowTargets>
           </sendSignalAction>
+          <sendSignalAction
+            Id="47ad943e-54e6-423d-8894-39ac67395af7"
+            name="Загрузка программы"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="161f2d93-d497-4657-b283-aa7eae511539"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="7361145e-b705-41e6-aea9-fae6983b8940"
+                  LastKnownName="Экран 1"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
