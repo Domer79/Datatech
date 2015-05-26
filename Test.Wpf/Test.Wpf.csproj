@@ -54,15 +54,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ConfigurationSections\StateCollection.cs" />
-    <Compile Include="ConfigurationSections\StateElement.cs" />
-    <Compile Include="ConfigurationSections\StateMachineSection.cs" />
     <Compile Include="Interfaces\IState.cs" />
     <Compile Include="Interfaces\IStateCollection.cs" />
     <Compile Include="Interfaces\IStateMachine.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="StateMachine.cs" />
-    <Compile Include="StateMachineActionDispatcher.cs" />
     <Compile Include="Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
     </Compile>

@@ -29,27 +29,6 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLActivityDiagram1.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
-    </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="UMLUseCaseDiagram1.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLUseCaseDiagram1.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
-    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\StateMachineModelingProject.uml">
       <SubType>Content</SubType>

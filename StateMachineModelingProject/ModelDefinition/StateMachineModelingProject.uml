@@ -1,16 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="119e4164-c5e0-43fe-adbe-7e45d80bd2a3"
   name="StateMachineModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <ownedCommentsInternal>
     <comment
       Id="504c37dc-3455-4752-818f-06239f470fa5">
-      <body>Нажатия кнопки №1</body>
+      <body>События</body>
       <annotatedElements>
         <sendSignalActionMoniker
           Id="8cba0bd0-b9bd-4040-9d0e-4bbb833806e7"
           LastKnownName="Нажатие на кнопку №1"
+          LastKnownLocation="StateMachineModelingProject.uml" />
+        <sendSignalActionMoniker
+          Id="8880748e-b1ed-4258-9370-d4f1795d9142"
+          LastKnownName="Нажатие на кнопку №3"
+          LastKnownLocation="StateMachineModelingProject.uml" />
+        <sendSignalActionMoniker
+          Id="520d841f-1f71-4e60-a2ea-abba840f5ad2"
+          LastKnownName="Ввод текста в поле №1"
+          LastKnownLocation="StateMachineModelingProject.uml" />
+        <sendSignalActionMoniker
+          Id="8dc67c23-7410-4b30-a925-db6263ce3fed"
+          LastKnownName="Нажатие на кнопку №2"
+          LastKnownLocation="StateMachineModelingProject.uml" />
+        <sendSignalActionMoniker
+          Id="1d29678e-e646-431d-89e4-3ef3bcf930b7"
+          LastKnownName="Ввод в поле текста &quot;hello&quot;"
           LastKnownLocation="StateMachineModelingProject.uml" />
       </annotatedElements>
     </comment>
@@ -80,7 +96,7 @@
                 isMultireceive="false">
                 <sendSignalActionMoniker
                   Id="8dc67c23-7410-4b30-a925-db6263ce3fed"
-                  LastKnownName="Нажаьте на кнопку №2"
+                  LastKnownName="Нажатие на кнопку №2"
                   LastKnownLocation="StateMachineModelingProject.uml" />
               </objectFlow>
             </objectFlowTargets>
@@ -153,7 +169,7 @@
                 isMultireceive="false">
                 <sendSignalActionMoniker
                   Id="8880748e-b1ed-4258-9370-d4f1795d9142"
-                  LastKnownName="Signal3"
+                  LastKnownName="Нажатие на кнопку №3"
                   LastKnownLocation="StateMachineModelingProject.uml" />
               </objectFlow>
             </objectFlowTargets>
@@ -183,7 +199,7 @@
           </sendSignalAction>
           <sendSignalAction
             Id="8dc67c23-7410-4b30-a925-db6263ce3fed"
-            name="Нажаьте на кнопку №2"
+            name="Нажатие на кнопку №2"
             isLeaf="false">
             <objectFlowTargets>
               <objectFlow
@@ -200,7 +216,7 @@
           </sendSignalAction>
           <sendSignalAction
             Id="8880748e-b1ed-4258-9370-d4f1795d9142"
-            name="Signal3"
+            name="Нажатие на кнопку №3"
             isLeaf="false">
             <objectFlowTargets>
               <objectFlow

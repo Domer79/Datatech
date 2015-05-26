@@ -10,14 +10,11 @@ namespace Test.Wpf
 {
     class Program
     {
-        public static IStateMachine StateMachine = new StateMachine(new StateMachineActionDispatcher());
-
         [STAThread]
         public static void Main()
         {
-//            var application = new Application();
-//            application.Run(new MainWindow());
-            StateMachine.ChangeState("Start");
+            var application = new Application();
+            application.Run(new MainWindow());
         }
     }
 }

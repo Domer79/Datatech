@@ -1,28 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="ac8ad2f3-ae74-4d61-b6ad-0ed0c626084a" name="Activity1" linkedPackageId="3aa01fe5-9b99-4e4b-a311-64aaf6d33127" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ac8ad2f3-ae74-4d61-b6ad-0ed0c626084a" name="Activity1" linkedPackageId="3aa01fe5-9b99-4e4b-a311-64aaf6d33127" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="9f1eda5b-1e68-48d1-87af-c020171afc14">
       <elementDefinition Id="504c37dc-3455-4752-818f-06239f470fa5" />
-      <body>Нажатия кнопки №1</body>
+      <body>События</body>
       <annotatedElements>
         <sendSignalActionMoniker Id="4d57bd57-28e0-47ca-85b9-6b669a76e609" LastKnownName="Нажатие на кнопку №1" />
+        <sendSignalActionMoniker Id="c105060c-90f2-4dff-a163-f413bcf88ee4" LastKnownName="Нажатие на кнопку №3" />
+        <sendSignalActionMoniker Id="c9b0123d-ad4c-4a37-ba5b-df7eba9c45f6" LastKnownName="Ввод текста в поле №1" />
+        <sendSignalActionMoniker Id="a0e1d277-8d8f-47ba-8c67-7988f003ccad" LastKnownName="Нажатие на кнопку №2" />
+        <sendSignalActionMoniker Id="a13f510b-77e8-4841-981a-6ab8b56f4595" LastKnownName="Ввод в поле текста &quot;hello&quot;" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="9b475965-fb14-48b3-a546-789bb09c7737">
-      <profileInstance Id="31073232-ff7f-424c-85ad-f3f846b7b725" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="21197980-8890-4433-a2f1-afdddc9a2626">
-      <profileInstance Id="620bfe3c-c000-4f8a-9d28-140d00022389" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="388c83f4-21fb-4c7f-83f2-e50bef09766b" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -46,7 +36,7 @@
             <elementDefinition Id="70feddca-26a5-4e2d-b6a0-e0c5c4c958db" />
             <objectFlowTargets>
               <objectFlow Id="644f71f9-a81d-4f27-897c-430a32485432" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <sendSignalActionMoniker Id="a0e1d277-8d8f-47ba-8c67-7988f003ccad" LastKnownName="Нажаьте на кнопку №2" />
+                <sendSignalActionMoniker Id="a0e1d277-8d8f-47ba-8c67-7988f003ccad" LastKnownName="Нажатие на кнопку №2" />
                 <elementDefinition Id="f1aa52f6-058a-4f87-9697-6ce74ea614a8" />
               </objectFlow>
             </objectFlowTargets>
@@ -86,7 +76,7 @@
             <elementDefinition Id="e96b1516-950d-4770-bc84-afb8193e80ab" />
             <objectFlowTargets>
               <objectFlow Id="8b3f8767-dec4-4657-bde1-cb75051fe3b6" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <sendSignalActionMoniker Id="c105060c-90f2-4dff-a163-f413bcf88ee4" LastKnownName="Signal3" />
+                <sendSignalActionMoniker Id="c105060c-90f2-4dff-a163-f413bcf88ee4" LastKnownName="Нажатие на кнопку №3" />
                 <elementDefinition Id="d961c355-8ea5-41b1-a240-90fdd95b75f4" />
               </objectFlow>
             </objectFlowTargets>
@@ -105,7 +95,7 @@
               </objectFlow>
             </objectFlowTargets>
           </sendSignalAction>
-          <sendSignalAction Id="a0e1d277-8d8f-47ba-8c67-7988f003ccad" name="Нажаьте на кнопку №2" isLeaf="false">
+          <sendSignalAction Id="a0e1d277-8d8f-47ba-8c67-7988f003ccad" name="Нажатие на кнопку №2" isLeaf="false">
             <elementDefinition Id="8dc67c23-7410-4b30-a925-db6263ce3fed" />
             <objectFlowTargets>
               <objectFlow Id="ea006838-cfd0-4cfc-a764-5b6e2c7f71a2" isLeaf="false" isMulticast="false" isMultireceive="false">
@@ -114,7 +104,7 @@
               </objectFlow>
             </objectFlowTargets>
           </sendSignalAction>
-          <sendSignalAction Id="c105060c-90f2-4dff-a163-f413bcf88ee4" name="Signal3" isLeaf="false">
+          <sendSignalAction Id="c105060c-90f2-4dff-a163-f413bcf88ee4" name="Нажатие на кнопку №3" isLeaf="false">
             <elementDefinition Id="8880748e-b1ed-4258-9370-d4f1795d9142" />
             <objectFlowTargets>
               <objectFlow Id="1226deb3-e29d-4479-8a1f-d50f95988dd4" isLeaf="false" isMulticast="false" isMultireceive="false">
@@ -147,5 +137,19 @@
   </packagedElements>
   <package Id="3aa01fe5-9b99-4e4b-a311-64aaf6d33127" name="StateMachineModelingProject">
     <elementDefinition Id="119e4164-c5e0-43fe-adbe-7e45d80bd2a3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9b475965-fb14-48b3-a546-789bb09c7737">
+        <profileInstance Id="31073232-ff7f-424c-85ad-f3f846b7b725" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="21197980-8890-4433-a2f1-afdddc9a2626">
+        <profileInstance Id="620bfe3c-c000-4f8a-9d28-140d00022389" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
