@@ -561,6 +561,7 @@
     <Compile Include="Infrastructure\XmlResult.cs" />
     <Compile Include="Models\AddressBook.cs" />
     <Compile Include="Models\DatatechContext.cs" />
+    <Compile Include="Models\ErrorInfo.cs" />
     <Compile Include="Models\LoginView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

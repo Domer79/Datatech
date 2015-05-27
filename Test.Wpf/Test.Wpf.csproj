@@ -55,6 +55,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Infrastructure\StateMachine\Events\Window2Button3ClickEvent.cs" />
+    <Compile Include="Infrastructure\StateMachine\Events\Window2TextBox2EnterAfterHelloEvent.cs" />
     <Compile Include="Interfaces\IEvent.cs" />
     <Compile Include="Interfaces\IState.cs" />
     <Compile Include="Interfaces\IStateMachine.cs" />

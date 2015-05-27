@@ -22,12 +22,15 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="UMLActivityDiagram1.activitydiagram">
+    <Content Include="Graph1.dgml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLActivityDiagram1.activitydiagram.layout">
+    <Content Include="Диаграмма состояний и переходов.activitydiagram">
       <SubType>Content</SubType>
-      <DependentUpon>UMLActivityDiagram1.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Диаграмма состояний и переходов.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Диаграмма состояний и переходов.activitydiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\StateMachineModelingProject.uml">

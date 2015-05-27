@@ -162,6 +162,16 @@
                   LastKnownName="Нажатие на кнопку №3"
                   LastKnownLocation="StateMachineModelingProject.uml" />
               </objectFlow>
+              <objectFlow
+                Id="fd110891-f6f7-4249-bc66-2024d908be47"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <sendSignalActionMoniker
+                  Id="9234904d-0c2c-4a5c-b9ff-fb940f65f11e"
+                  LastKnownName="Ввод в поле  после текста &quot;hello&quot;"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger
@@ -289,6 +299,23 @@
             Id="d36c2457-8c91-4928-8848-0f927decc298"
             name="Событие"
             isLeaf="false" />
+          <sendSignalAction
+            Id="9234904d-0c2c-4a5c-b9ff-fb940f65f11e"
+            name="Ввод в поле  после текста &quot;hello&quot;"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="e7c9c691-8a35-40e9-b103-e7cc8c25baca"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="92d201eb-3e15-4eea-888a-6dc046b096cf"
+                  LastKnownName="Экран №2. Кнопка №3 неактивна"
+                  LastKnownLocation="StateMachineModelingProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
         </nodes>
       </activity>
     </packageHasNamedElement>

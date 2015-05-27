@@ -22,7 +22,7 @@ query.doQuery = function (url, options) {
     var success = options.success;
     var uri = url || options.url;
     var errorUrl = options.errorUrl || query.errorUrl;
-    var dataType = options.dataType || "json";
+    var dataType = options.dataType || "*";
 
     //#endregion
 

@@ -78,6 +78,10 @@
                 <sendSignalActionMoniker Id="c105060c-90f2-4dff-a163-f413bcf88ee4" LastKnownName="Нажатие на кнопку №3" />
                 <elementDefinition Id="d961c355-8ea5-41b1-a240-90fdd95b75f4" />
               </objectFlow>
+              <objectFlow Id="7abb46e6-6a5a-4d26-bdbd-538c5cf883a5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <sendSignalActionMoniker Id="5164bce1-d1de-4186-8b2f-f385a900baef" LastKnownName="Ввод в поле  после текста &quot;hello&quot;" />
+                <elementDefinition Id="fd110891-f6f7-4249-bc66-2024d908be47" />
+              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger Id="d708f3d7-f8b6-4ca7-838e-5d6d25ac5967" name="2147483647" value="2147483647">
@@ -149,6 +153,15 @@
           </objectNode>
           <sendSignalAction Id="437cee1a-5fcd-497e-a0a1-7ccedee22309" name="Событие" isLeaf="false">
             <elementDefinition Id="d36c2457-8c91-4928-8848-0f927decc298" />
+          </sendSignalAction>
+          <sendSignalAction Id="5164bce1-d1de-4186-8b2f-f385a900baef" name="Ввод в поле  после текста &quot;hello&quot;" isLeaf="false">
+            <elementDefinition Id="9234904d-0c2c-4a5c-b9ff-fb940f65f11e" />
+            <objectFlowTargets>
+              <objectFlow Id="0da22229-ed43-4578-812b-fc0763cd969f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="0a49b65d-5601-41a8-8c37-409a0f189a20" LastKnownName="Экран №2. Кнопка №3 неактивна" />
+                <elementDefinition Id="e7c9c691-8a35-40e9-b103-e7cc8c25baca" />
+              </objectFlow>
+            </objectFlowTargets>
           </sendSignalAction>
         </nodes>
       </activity>

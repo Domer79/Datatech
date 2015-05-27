@@ -13,7 +13,7 @@ namespace Test.Web.Infrastructure
     {
         private readonly T _data;
 
-        private XmlResult(T data)
+        public XmlResult(T data)
         {
             _data = data;
         }

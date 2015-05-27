@@ -9,7 +9,7 @@ namespace Test.Wpf.Infrastructure.StateMachine.States
 
         public IEvent[] Events
         {
-            get { return new IEvent[] {new Window2Button3ClickEvent(),}; }
+            get { return new IEvent[] {new Window2Button3ClickEvent(), new Window2TextBox2EnterAfterHelloEvent(), }; }
         }
     }
 }

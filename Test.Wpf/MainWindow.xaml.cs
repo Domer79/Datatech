@@ -9,6 +9,8 @@ namespace Test.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool _btn1Clicked;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -22,7 +24,11 @@ namespace Test.Wpf
 
         private void Btn1_Click(object sender, RoutedEventArgs e)
         {
+            if (_btn1Clicked)
+                return;
+           
             Tools.StateMachine.ChangeState<MainWindowButton1ClickEvent>(this);
+            _btn1Clicked = true;
         }
 
         private void Btn2_Click(object sender, RoutedEventArgs e)

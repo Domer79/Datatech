@@ -34,7 +34,11 @@ namespace Test.Wpf
                 return;
 
             if (_textBox2IsHello)
+            {
+                Tools.StateMachine.ChangeState<Window2TextBox2EnterAfterHelloEvent>(this);
+                _textBox2IsHello = false;
                 return;
+            }
 
             if (TextBox2.Text != "hello")
                 return;
