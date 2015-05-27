@@ -1,7 +1,47 @@
-﻿
+﻿@model Test.Web.Models.LoginView
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Идентификация пользователя";
 }
 
-<h2>Index</h2>
+<link href="~/Content/signin.css" rel="stylesheet" />
 
+@using (Html.BeginForm("Index", "Login", FormMethod.Post, new { @class = "form-signin" }))
+{
+    <fieldset>
+        <label for="login" class="sr-only">Имя входа</label>
+        @Html.TextBox("login", @Model.Login, new { @class = "form-control", placeholder = "Имя входа", required = true, autofocus = true })
+        <label for="password" class="sr-only">Пароль</label>
+        @Html.Password("password", @Model.Password, new { @class = "form-control", placeholder = "Пароль", required = true})
+        <button id="submit" class="btn btn-lg btn-primary btn-block hidden" type="button">Вход</button>
+    </fieldset>
+}
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        $("form input").change(function () {
+            var isInputCleared = true;
+
+            $("form input").each(function () {
+                isInputCleared &= $(this).val() === "";
+            });
+
+            if (isInputCleared == 1)
+                $("#submit").addClass("hidden");
+            else
+                $("#submit").removeClass("hidden");
+        });
+
+        $("#submit").click(function() {
+            query.doQuery("@Url.Action("Index")", {
+                data: {Login: $("#login").val(), Password: $("#password").val()},
+                method: "POST",
+                success: function() {
+                    window.location.href="@Url.Action("Index", "Main")";
+                }
+            });
+        });
+
+    });
+</script>

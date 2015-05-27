@@ -22,6 +22,7 @@ query.doQuery = function (url, options) {
     var success = options.success;
     var uri = url || options.url;
     var errorUrl = options.errorUrl || query.errorUrl;
+    var dataType = options.dataType || "json";
 
     //#endregion
 
@@ -48,6 +49,7 @@ query.doQuery = function (url, options) {
         contentType: contentType,
         data: data,
         method: method,
+        dataType: dataType,
         beforeSend: function () {
             downloadBar = $(".downloadModalBase").clone().appendTo($("body")).attr("id", "downloadBar");
             downloadBar.children("#progressbar").progressbar({ value: false });
